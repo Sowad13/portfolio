@@ -33,7 +33,7 @@ function Education({}: Props) {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             className="w-32 h-32 rounded-full xl:w-[200px] xl:h-[200px] object-contain object-center bg-white"
-            src="https://loox.com.bd/loox-logo.png"
+            src="/loox.png"
             alt=""
           />
 
