@@ -27,7 +27,7 @@ function ContactMe({}: Props) {
 
       <div className="px-0 md:px-10 space-y-10">
         <h3 className="text-4xl font-semibold text-center">
-          I'd love to hear from you
+          I`d love to hear from you
         </h3>
 
         <div className="space-y-5">
