@@ -10,8 +10,8 @@ import Skills from '../components/Skills';
 
 const Home: NextPage = () => {
   return (
-    <div className='bg-[rgb(17,32,51)] text-white h-screen snap-y snap-mandatory
-    overflow-scroll overflow-x-hidden z-0 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white'>
+    <div className='bg-[white] text-white h-screen snap-y snap-mandatory
+    overflow-scroll overflow-x-hidden z-0 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#112033]'>
       <Head>
         <title>Sowad Portfolio</title>
         
@@ -40,7 +40,7 @@ const Home: NextPage = () => {
         <Projects />
       </section>
 
-      <section id='contact' className='snap-start'>
+      <section id='contact' className='snap-center'>
         <ContactMe />
       </section>
 

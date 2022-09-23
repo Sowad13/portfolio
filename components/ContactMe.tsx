@@ -19,39 +19,38 @@ function ContactMe({}: Props) {
   return (
     <div
       className="h-screen flex relative flex-col text-center md:text-left md:flex-row
-        max-w-7xl px-10 justify-evenly mx-auto items-center"
+        max-w-7xl px-10 justify-evenly mx-auto items-center mb-20"
     >
-      <h4 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
+      <h4 className="absolute top-20 uppercase tracking-[20px] text-gray-500 text-2xl">
         Contact
       </h4>
 
-      <div className="px-0 md:px-10 space-y-10">
-        <h3 className="text-4xl font-semibold text-center">
-          I`d love to hear from you
+      <div className="px-5 md:px-10 space-y-5 w-screen absolute top-[22%]">
+        <h3 className="text-2xl sm:text-3xl font-semibold text-center text-gray-500">
+          I`d love to <span className="text-[#F7AB0A]">hear</span> from you
         </h3>
 
-        <div className="space-y-5">
+        
           <div className="flex items-center space-x-5 justify-center">
-            <PhoneIcon className="h-7 w-7 animate-pulse fill-[#607EAA]" />
-            <p className="text-lg">+880 1531988989</p>
+            <PhoneIcon className="h-6 w-6 animate-pulse fill-[#607EAA]" />
+            <p className="text-sm sm:text-base text-gray-500">+880 1531988989</p>
           </div>
 
           <div className="flex items-center space-x-5 justify-center">
-            <EnvelopeIcon className="h-7 w-7 animate-pulse fill-[#607EAA]" />
-            <p className="text-lg">mejbahurrahman13@gmail.com</p>
+            <EnvelopeIcon className="h-6 w-6 animate-pulse fill-[#607EAA]" />
+            <p className="text-sm sm:text-base text-gray-500">mejbahurrahman13@gmail.com</p>
           </div>
 
-          <div className="flex items-center space-x-5 justify-center">
-            <MapPinIcon className="h-7 w-7 animate-pulse fill-[#607EAA]" />
-            <p className="text-lg">Modhubazar, West Dhanmondi, Dhaka-1209</p>
+          <div className="flex items-start space-x-2 justify-center">
+            <MapPinIcon className="h-6 w-6 animate-pulse fill-[#607EAA]" />
+            <p className="text-sm sm:text-base text-gray-500">Modhubazar, West Dhanmondi, Dhaka-1209</p>
           </div>
-        </div>
 
         <form
           onSubmit={handleSubmit(onSubmit)}
           className="flex flex-col space-y-2 w-fit mx-auto"
         >
-          <div className="flex space-x-2">
+          <div className="flex flex-col sm:flex-row sm:space-x-2 space-y-2 sm:space-y-0">
             <input
               {...register("name")}
               placeholder="Name"
@@ -81,7 +80,7 @@ function ContactMe({}: Props) {
           />
           <button
             type="submit"
-            className="bg-[#607EAA]/50 py-5 px-10 rounded-md text-white font-bold text-lg"
+            className="bg-[#112033] py-3 px-10 rounded-md text-white font-bold text-lg"
           >
             Submit
           </button>

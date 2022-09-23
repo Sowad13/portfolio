@@ -28,7 +28,7 @@ const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.c
 
       <div
         className="absolute top-[10%] w-full flex overflow-x-scroll overflow-y-hidden
-            snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white"
+            snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-[#112033]"
       >
         {projects.map((project, i) => (
           //eslint-disable-next-line react/jsx-key
@@ -66,7 +66,7 @@ const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.c
       </div>
 
       <div
-        className="w-full absolute top-[30%] bg-[#607EAA]/50 left-0 h-[500px]
+        className="w-full absolute top-[30%] bg-[#607EAA] left-0 h-[500px]
         -skew-y-12"
       ></div>
     </motion.div>
