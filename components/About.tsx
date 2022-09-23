@@ -15,7 +15,7 @@ function About({ }: Props) {
         transition={{ duration: 1.5 }}
         className='flex flex-col relative h-screen text-center md:text-left md:flex-row max-w-7xl px-10 justify-evenly mx-auto items-center overflow-hidden'>
             <h3 className='absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl'>About</h3>
-
+        <div className='h-[70%] flex flex-col md:flex-row items-center bottom-0 justify-evenly'>
             <motion.img
 
                 initial={{
@@ -32,11 +32,11 @@ function About({ }: Props) {
                 }}
 
                 src="/about.jpg"
-                className="-mb-20 md:mb-0 flex-shrink-0 w-55 h-55 rounded-full object-cover md:rounded-lg
-                md:w-64 md:h-95 xl:w-[350px] xl:h-[350px]"
+                className="-mb-20 md:mb-0 flex-shrink-0 w-0 h-0 rounded-full object-cover md:rounded-lg
+                md:w-[250px] md:h-[250px] xl:w-[350px] xl:h-[350px]"
             />
 
-            <div className='space-y-8 px-0 md:px-10'>
+            <div className='space-y-5 px-0 md:px-10 h-[70%]'>
                 <h4 className='text-3xl font-semibold'>A little background</h4>
                 <p className='text-base text-gray-400'>
                     Hello! This is MD Mejbah Ur Rahman Sowad. I am an adventurous guy who is always looking forward to new challenges in life.
@@ -50,6 +50,7 @@ function About({ }: Props) {
                     <li className='text-gray-400'>2018-2022</li>
                 </ul>
                 
+            </div>
             </div>
 
         </motion.div>
