@@ -14,7 +14,7 @@ function Skills({ directionLeft, directionRight }: Props) {
       whileInView={{ opacity: 1 }}
       transition={{ duration: 2 }}
       className="h-screen flex flex-col relative text-center md:text-left lg:flex-row max-w-[2000px] lg:px-10 min-h-screen
-        justify-center lg:space-y-0 mx-auto items-center"
+        justify-evenly lg:space-y-0 mx-auto items-center"
     >
       <h4 className="absolute top-24 uppercase tracking-[20px] text-gray-500 text-2xl">
         Skills
@@ -24,375 +24,377 @@ function Skills({ directionLeft, directionRight }: Props) {
         Hover over a skill for current proficiency
       </h3>
 
-      <div className="grid grid-cols-4 gap-5">
-        {/* firebase */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/c++.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+      {/* <div className="h-[70%]"> */}
+        <div className="grid grid-cols-4 gap-4 absolute top-1/3 flex items-center justify-evenly">
+          {/* firebase */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/c++.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">80%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">80%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* figma */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/java.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* figma */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/java.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">80%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">80%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* flutter */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/flutter.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* flutter */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/flutter.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">70%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">70%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* c++ */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/python.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* c++ */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/python.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* python */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/react.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* python */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/react.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* nextjs */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/next.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* nextjs */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/next.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* react */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/tailwind.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* react */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/tailwind.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">70%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">70%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* mongo */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionLeft ? -200 : 200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/html.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* mongo */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionLeft ? -200 : 200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/html.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">70%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">70%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* java */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/firebase.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* java */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/firebase.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* html */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/mongo.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* html */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/mongo.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">50%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">50%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* tailwind */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/git.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* tailwind */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/git.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">70%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">70%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* gsuite */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/figma.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* gsuite */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/figma.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">80%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">80%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* github */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/gsuite.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* github */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/gsuite.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">80%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">80%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* illustrator */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/illustrator.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* illustrator */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/illustrator.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* nodejs */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/node2.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* nodejs */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/node2.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">40%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">40%</p>
+              </div>
             </div>
           </div>
-        </div>
 
-        {/* mysql */}
-        <div className="group relative flex cursor-pointer">
-          <motion.img
-            initial={{
-              x: directionRight ? 200 : -200,
-              opacity: 0,
-            }}
-            transition={{ duration: 1 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            src="/mysql.png"
-            className="rounded-full  border border-gray-500 object-contain w-24 h-24 xl:w-30
+          {/* mysql */}
+          <div className="group relative flex cursor-pointer">
+            <motion.img
+              initial={{
+                x: directionRight ? 200 : -200,
+                opacity: 0,
+              }}
+              transition={{ duration: 1 }}
+              whileInView={{ opacity: 1, x: 0 }}
+              src="/mysql.png"
+              className="rounded-full  border border-gray-500 object-contain w-[70px] h-[70px] xl:w-30
             xl:h-30 filter group-hover:grayscale transition duration-300 ease-in-out"
-          />
-          <div
-            className="absolute opacity-0 group-hover:opacity-80 transition duration-300
-            ease-in-out group-hover:bg-white h-24 w-24 xl:w-30 xl:h-30 rounded-full z-0"
-          >
-            <div className="flex items-center justify-center h-full">
-              <p className="text-3xl font-bold text-black opacity-100">60%</p>
+            />
+            <div
+              className="absolute opacity-0 group-hover:opacity-80 transition duration-300
+            ease-in-out group-hover:bg-white w-[70px] h-[70px] xl:w-30 xl:h-30 rounded-full z-0"
+            >
+              <div className="flex items-center justify-center h-full">
+                <p className="text-2xl font-bold text-black opacity-100">60%</p>
+              </div>
             </div>
           </div>
         </div>
-      </div>
+      {/* </div> */}
     </motion.div>
   );
 }
