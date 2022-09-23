@@ -27,14 +27,14 @@ const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.c
       </h4>
 
       <div
-        className="relative w-full flex overflow-x-scroll overflow-y-hidden
+        className="absolute top-[10%] w-full flex overflow-x-scroll overflow-y-hidden
             snap-x snap-mandatory z-20 scrollbar scrollbar-thin scrollbar-track-transparent scrollbar-thumb-white"
       >
         {projects.map((project, i) => (
           //eslint-disable-next-line react/jsx-key
           <div
             className="w-screen flex-shrink-0 snap-center flex flex-col
-                    space-y-5 items-center justify-center p-20 md:p-44 h-screen"
+                    space-y-5 items-center justify-center p-10 md:p-44 h-screen"
           >
             <motion.img
               initial={{
@@ -44,13 +44,13 @@ const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.c
               whileInView={{ opacity: 1, y: 0 }}
               transition={{ duration: 1.2 }}
               viewport={{ once: true }}
-              className="xl:h-80 xl:w-90 md:w-70 md:h-60"
+              className="w-0 h-0 sm:h-[120px] sm:w-[220px] md:w-[250px] md:h-[150px]"
               src="/laptop.png"
               alt=""
             />
 
-            <div className="space-y-10 px-0 md:px-10 max-w-6xl">
-              <h4 className="text-4xl font-semibold text-center">
+            <div className="space-y-5 px-0 md:px-5 max-w-6xl">
+              <h4 className="text-3xl font-semibold text-center">
                 Project {i + 1} of {projects.length}: {projectNames[i]}
               </h4>
               <p className="text-lg text-center md:text-left">
@@ -58,7 +58,7 @@ const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.c
               </p>
 
               <Link href={projectLink[i]}>
-              <button className="heroButton border border-[#112033] text-[#112033]">Github</button>
+              <button className="heroButton border border-white text-[white] bg-[#112033]">Github</button>
               </Link>
             </div>
           </div>
