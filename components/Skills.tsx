@@ -25,7 +25,7 @@ function Skills({ directionLeft, directionRight }: Props) {
       </h3>
 
       {/* <div className="h-[70%]"> */}
-        <div className="grid grid-cols-4 gap-4 absolute top-1/3 flex items-center justify-evenly">
+        <div className="grid grid-cols-4 gap-3 absolute top-1/3 flex items-center justify-evenly">
           {/* firebase */}
           <div className="group relative flex cursor-pointer">
             <motion.img

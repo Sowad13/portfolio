@@ -42,8 +42,7 @@ function About({ }: Props) {
                 <p className='text-base text-gray-500'>
                     Hello! This is MD Mejbah Ur Rahman Sowad. I am an adventurous guy who is always looking forward to new challenges in life.
                     I am a person who loves to deal with puzzles and maths and not really a fan of memorizing. I like to travel or watch anime during my leisure 
-                    time. I am a fast learner and can adapt with people well. I believe that harwork wihtout effieciency is futile and one always has to be honest.
-                    I like to smile and make people around me smile.
+                    time. I am a fast learner and can adapt with people well. I believe that harwork without effieciency is futile and one always has to be honest.
                 </p>
                 <Link href={"https://drive.google.com/file/d/1wA6mjKoQMJ7K99FRU2vr9hibc4hXB3gx/view?usp=sharing"}>
                     <button className='heroButton'>View Resume</button>
