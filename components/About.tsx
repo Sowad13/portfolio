@@ -32,7 +32,7 @@ function About({ }: Props) {
                     opacity: 1
                 }}
 
-                src="/dp2.jpg"
+                src="/sowad.jpeg"
                 className="-mb-20 md:mb-0 flex-shrink-0 w-0 h-0 rounded-full object-cover md:rounded-lg
                 md:w-[250px] md:h-[250px] xl:w-[350px] xl:h-[350px]"
             />

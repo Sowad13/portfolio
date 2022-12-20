@@ -1,19 +1,18 @@
 import React from "react";
 import { motion } from "framer-motion";
 import Image from "next/image";
-import ScrollContainer from "react-indiana-drag-scroll";
 import Link from "next/link";
 
 type Props = {};
 
 function Projects({}: Props) {
-  const projects = [1, 2, 3];
-const projectNames = ["Temployee", "HOPE", "Transport Management System"];
-  const projectDes = ["A freelancing website, especially for freshers. Using Temployee an organisation can also hire people to complete tasks. The website is developed with react and ASP .NET",
+  const projects = [1, 2, 3, 4];
+const projectNames = ["NFT Marketplace","Temployee", "HOPE", "Transport Management System"];
+  const projectDes = ["A marketplace for the people with the creative artistic mind","A freelancing website, especially for freshers. Using Temployee an organisation can also hire people to complete tasks. The website is developed with react and ASP .NET",
   "An android app build to help the mentally challenged or depressed people. It is designed to reduce the mental stress of a person to make their life easier. It was developed with java and firebase using android studio.",
   "A database management system built to keep records of vehicles and staff. The audience of the system are the transportation companies. MongoDB was used as the database and it was developed in intellij."
 ]
-const projectLink = ["https://github.com/tashfiq333/Temployee","https://github.com/Sowad13/Hope", "https://github.com/Sowad13/Transport"]
+const projectLink = ["https://github.com/Sowad13/seaweedNFT-marketplace","https://github.com/tashfiq333/Temployee","https://github.com/Sowad13/Hope", "https://github.com/Sowad13/Transport"]
   return (
     <motion.div
       initial={{ opacity: 0 }}
